@@ -1,0 +1,8 @@
+# common
+.vscode
+
+# C
+*.exe
+
+# frontend
+node_modules/

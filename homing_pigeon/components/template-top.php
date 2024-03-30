@@ -10,13 +10,9 @@
     <link rel="stylesheet" href="./css/components/site-header.css" media="screen" />
     <?php echo $headerTags; ?>
     <title>
-        <?php 
-            var_dump($title);
-            $title;
-        ?>
+        <?php echo $title; ?>
     </title>
 </head>
 <body>
     <div>
         <?php require_once("./components/site-header.php") ?>
-        <?php echo $body; ?>

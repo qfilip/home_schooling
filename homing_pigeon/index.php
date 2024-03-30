@@ -19,17 +19,6 @@
 <section>
     <h2>Destinations</h2>
     <p>Reach any corner of this round planet of ours...</p>
-
-    <?php
-        $dbContent = file_get_contents('./database.json');
-        $destinations = json_decode($dbContent, true)['destinations'];
-        echo "<ul>";
-            foreach($destinations as $x) {
-                echo "<li> {$x['place']} ({$x['country']}) </li>";
-            }
-        echo "</ul>";
-    ?>
-
     <a href="./book.php">Book now!</a>
 </section>
 

@@ -1,0 +1,45 @@
+:root {
+    /* colors */
+    --c-black: hsl(0, 0%, 7%);
+    --c-white: hsl(0, 0%, 100%);
+    --c-grey: hsl(0, 0%, 40%);
+    
+    --c-blue: hsl(207, 90%, 54%);
+    --c-blue-d1: hsl(207, 90%, 44%);
+    
+    --c-green:hsl(122, 39%, 49%);
+    --c-green-d1:hsl(122, 39%, 39%);
+    
+    --c-orange:hsl(39, 100%, 50%);
+    --c-orange-d1:hsl(39, 100%, 40%);
+    
+    --c-red: hsl(4, 90%, 58%);
+    --c-red-d1: hsl(4, 90%, 48%);
+
+    /* layout */
+    --pad-sm: .4rem;
+}
+
+* {
+    transition: .3s;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: var(--pad-sm);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    border: 1px solid var(--color, var(--c-black));
+    padding: var(--pad-sm);
+    box-shadow: 2px 2px 3px var(--color, var(--c-black));
+    font-size: 1.2rem;
+}

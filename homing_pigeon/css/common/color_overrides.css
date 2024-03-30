@@ -1,0 +1,47 @@
+.blue {
+    --color: var(--c-white);
+    --bgColor: var(--c-blue);
+    --borderColor: var(--c-blue);
+}
+
+.blue:hover {
+    --color: var(--c-white);
+    --bgColor: var(--c-blue-d1);
+    --borderColor: var(--c-blue-d1);
+}
+
+.green {
+    --color: var(--c-white);
+    --bgColor: var(--c-green);
+    --borderColor: var(--c-green);
+}
+
+.green:hover {
+    --color: var(--c-white);
+    --bgColor: var(--c-green-d1);
+    --borderColor: var(--c-green-d1);
+}
+
+.orange {
+    --color: var(--c-white);
+    --bgColor: var(--c-orange);
+    --borderColor: var(--c-orange);
+}
+
+.orange:hover {
+    --color: var(--c-white);
+    --bgColor: var(--c-orange-d1);
+    --borderColor: var(--c-orange-d1);
+}
+
+.red {
+    --color: var(--c-white);
+    --bgColor: var(--c-red);
+    --borderColor: var(--c-red);
+}
+
+.red:hover {
+    --color: var(--c-white);
+    --bgColor: var(--c-red-d1);
+    --borderColor: var(--c-red-d1);
+}

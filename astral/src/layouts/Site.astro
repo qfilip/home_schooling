@@ -1,0 +1,46 @@
+---
+const { title, cssPath } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/variables.css" media="screen" />
+    <link rel="stylesheet" href="/css/major_tags.css" media="screen" />
+    <link rel="stylesheet" href="/css/buttons.css" media="screen" />
+    <link rel="stylesheet" href="/css/layout/site.css" media="screen" />
+    <link rel="stylesheet" href={cssPath} media="screen" />
+    <title>{ title }</title>
+</head>
+<body>
+    <header id="site-header">
+        <a class="headhome" href="/#">
+            <h1>Astral</h1>
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/#">Home</a>
+                </li>
+                <li>
+                    <a href="/blog">Blog</a>
+                </li>
+                <li>
+                    <a href="/subscribe">Subscribe</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <slot/>
+    </main>
+
+    <footer id="site-footer">
+        <!-- Written by { author } on <time datetime={ date }>{ date }</time> -->
+        Astral is a community driven bla bla
+    </footer>
+</body>
+</html>

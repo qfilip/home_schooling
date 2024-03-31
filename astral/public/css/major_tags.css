@@ -1,0 +1,32 @@
+::selection {
+    color: var(--c-green-l1);
+    background: var(--c-black);
+}
+
+* {
+    transition: .3s;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    background-color: var(--c-white-d1);
+}
+
+section {
+    padding: var(--pad-sm);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+a {
+    color: var(--c-green-d1);
+}

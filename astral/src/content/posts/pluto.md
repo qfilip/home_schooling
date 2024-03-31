@@ -1,6 +1,7 @@
 ---
 title: "Interesting Facts About Pluto"
-author: kwanza # references `src/content/authors/ben-holmes.json`
+author: kwanza
+date: 2024-01-01
 tags:
 - planets
 ---

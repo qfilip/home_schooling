@@ -1,0 +1,46 @@
+---
+import SiteLayout from '../../layouts/Site.astro';
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+    const posts = await getCollection('posts');
+    
+    // very important how you name object here (eg. entry), so you can destruct it below
+    return posts.map(entry => ({
+        params: { slug: entry.slug },
+        props: { entry }
+    }));
+}
+
+type Props = {
+    entry: CollectionEntry<'posts'>
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<SiteLayout cssPath="/css/pages/blog/entry.css">
+    <article>
+        <header>
+            <h2>{ entry.data.title }</h2>
+            <dl>
+                <div>
+                    <dt>Author</dt>
+                    <dd>{ entry.data.author }</dd>
+                </div>
+                <div>
+                    <dt>Date</dt>
+                    <dd>
+                        <time datetime={entry.data.date.toISOString()}>{entry.data.date.toLocaleString()}</time>
+                    </dd>
+                </div>
+            </dl>
+        </header>
+
+        <div>
+            <Content />
+        </div>
+    </article>
+</SiteLayout>

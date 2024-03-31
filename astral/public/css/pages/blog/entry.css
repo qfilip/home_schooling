@@ -1,0 +1,11 @@
+article {
+    padding: var(--pad-sm);
+}
+
+dl div {
+    color: var(--c-grey);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

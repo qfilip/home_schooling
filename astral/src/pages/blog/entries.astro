@@ -1,0 +1,19 @@
+---
+import SiteLayout from '../../layouts/Site.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('posts');
+
+---
+
+<SiteLayout title="Astral" cssPath="/css/pages/index.css">
+    <section>
+        <ul>
+            {posts.map(x => (
+                <li>
+                    <a href={`/blog/${x.slug}`}>{x.data.title}</a>
+                </li>
+            ))}
+        </ul>
+    </section>
+</SiteLayout>

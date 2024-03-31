@@ -4,6 +4,7 @@ author: kwanza
 date: 2024-01-01
 tags:
 - planets
+- kuiper belt object
 ---
 
 1. **Dwarf Planet**: Pluto was traditionally considered the ninth planet in our solar system until its reclassification as a dwarf planet by the International Astronomical Union (IAU) in 2006.

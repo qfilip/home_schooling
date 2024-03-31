@@ -4,6 +4,7 @@ author: nia
 date: 2024-01-02
 tags:
 - planets
+- gas giant
 ---
 
 Interesting facts you don't need to know (anti clickbait):

@@ -4,13 +4,22 @@
     export let entriesData: BlogEntryData[];
 
     let searchQuery = '';
+    let selectedTag = '';
+    
     const getTags = (eds: BlogEntryData[]) => {
         const tags = eds ? eds.map(x => x.tags).flat() : [];
         return ([...new Set(tags)] as string[]);
     }
 
+    const clearFilters = () => {
+        searchQuery = '';
+        selectedTag = '';
+    }
+
     $: tags = getTags(entriesData);
-    $: filteredEntries = entriesData.filter(x => x.title.toLowerCase().includes(searchQuery));
+    $: filteredEntries = entriesData.filter(x =>
+        x.title.toLowerCase().includes(searchQuery) &&
+        (selectedTag !== '' ? x.tags.includes(selectedTag) : true));
 </script>
 
 <section>
@@ -22,12 +31,13 @@
             </label>
             <label>
                 Tag:
-                <select>
+                <select bind:value={selectedTag}>
                     {#each tags as t, i}
                         <option value={t}>{t}</option>
                     {/each}
                 </select>
             </label>
+            <button on:click={clearFilters}>Clear</button>
         </div>
     </fieldset>
 

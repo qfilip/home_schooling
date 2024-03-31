@@ -6,6 +6,16 @@ dl div {
     color: var(--c-grey);
 
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+
+    dt {
+        min-width: 7%;
+        max-width: 10%;
+        flex-grow: 1;
+    }
+
+    dd {
+        margin: 0;
+        flex-grow: 9;
+    }
 }

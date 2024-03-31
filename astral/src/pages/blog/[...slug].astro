@@ -25,22 +25,25 @@ const { Content } = await entry.render();
     <article>
         <header>
             <h2>{ entry.data.title }</h2>
+        </header>
+
+        <div>
+            <Content />
+        </div>
+
+        <footer class="article-footer">
             <dl>
                 <div>
                     <dt>Author</dt>
                     <dd>{ entry.data.author }</dd>
                 </div>
                 <div>
-                    <dt>Date</dt>
+                    <dt>Posted on</dt>
                     <dd>
                         <time datetime={entry.data.date.toISOString()}>{entry.data.date.toLocaleString()}</time>
                     </dd>
                 </div>
             </dl>
-        </header>
-
-        <div>
-            <Content />
-        </div>
+        </footer>
     </article>
 </SiteLayout>

@@ -9,8 +9,6 @@
 
     background-color: var(--c-black);
     color: var(--c-white);
-
-    /* backdrop-filter: blur(6px); */
     
     opacity: .93;
 
@@ -58,12 +56,15 @@ main {
     max-height: 90vh;
     height: 90vh;
     overflow-y: auto;
+    background: linear-gradient(to bottom, var(--c-white-d1), var(--c-white-d3));
 }
 
 #site-footer {
     background-color: var(--c-black);
     color: var(--c-white);
     text-align: center;
-    position: sticky;
+    font-style: italic;
+    position: fixed;
     bottom: 0;
+    width: 100%;
 }

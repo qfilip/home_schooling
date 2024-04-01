@@ -5,14 +5,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--pad-sm);
+    padding: 0 var(--pad-sm);
+
+    height: var(--header-height);
 
     background-color: var(--c-black);
     color: var(--c-white);
     
     opacity: .93;
 
-    box-shadow: 2px 2px 5px var(--c-grey);
+    box-shadow: 2px 2px 2px var(--c-black);
 
     .headhome {
         text-decoration: none;
@@ -52,11 +54,18 @@
     }
 }
 
-main {
-    max-height: 90vh;
-    height: 90vh;
+#scroll-surface {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
     overflow-y: auto;
     background: linear-gradient(to bottom, var(--c-white-d1), var(--c-white-d3));
+}
+
+main {
+    min-height: calc(100% - var(--header-height) - var(--footer-height));
 }
 
 #site-footer {
@@ -64,7 +73,6 @@ main {
     color: var(--c-white);
     text-align: center;
     font-style: italic;
-    position: fixed;
-    bottom: 0;
+    height: var(--footer-height);
     width: 100%;
 }

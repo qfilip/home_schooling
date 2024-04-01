@@ -47,14 +47,16 @@ const { title = 'Astral', stylesheets = [], scripts = [] } = Astro.props;
         </nav>
     </header>
 
-    <main>
-        <slot/>
-    </main>
-
-    <footer id="site-footer">
-        <!-- Written by { author } on <time datetime={ date }>{ date }</time> -->
-        Astral is a community driven bla bla
-    </footer>
+    <div id="scroll-surface">
+        <main>
+            <slot/>
+        </main>
+    
+        <footer id="site-footer">
+            <!-- Written by { author } on <time datetime={ date }>{ date }</time> -->
+            Astral is a community driven bla bla
+        </footer>
+    </div>
     
     {scripts.map(x => <script src={x} lang="ts" type="module"></script>)}
 </body>

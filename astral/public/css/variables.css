@@ -23,4 +23,7 @@
 
     /* layout */
     --pad-sm: .6rem;
+
+    --header-height: 8vh;
+    --footer-height: 2.5vh;
 }

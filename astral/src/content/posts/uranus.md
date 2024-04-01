@@ -1,6 +1,6 @@
 ---
 title: "Exploring Uranus: The Ice Giant of the Solar System"
-author: Chad G. Pete
+author: chad_g_pete
 date: 2024-01-02
 tags:
 - planets

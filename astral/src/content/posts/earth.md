@@ -1,6 +1,6 @@
 ---
 title: "Exploring Earth: The Blue Marble"
-author: Chad G. Pete
+author: chad_g_pete
 date: 2024-01-01
 tags:
 - planets

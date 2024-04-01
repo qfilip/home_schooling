@@ -15,6 +15,6 @@ const data = posts.map(x => {
     return d;
 });
 ---
-<SiteLayout title="Astral" cssPath="/css/pages/index.css">
+<SiteLayout stylesheets={["/css/pages/index.css"]}>
     <BlogEntriesFilter entriesData={data} client:visible />
 </SiteLayout>

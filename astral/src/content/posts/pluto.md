@@ -1,6 +1,6 @@
 ---
 title: "Exploring Pluto: The Dwarf Planet at the Edge of the Solar System"
-author: kwanza
+author: Chad G. Pete
 date: 2024-01-01
 tags:
 - kuiper belt

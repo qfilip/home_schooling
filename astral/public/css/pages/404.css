@@ -1,0 +1,12 @@
+div {
+    display: flex;
+    margin-top: 10%;
+    p {
+        margin: auto;
+        width: 70%;
+        font-size: 3rem;
+        text-align: center;
+        border: 1px solid var(--c-black);
+        box-shadow: 2px 2px 3px var(--c-black);
+    }
+}

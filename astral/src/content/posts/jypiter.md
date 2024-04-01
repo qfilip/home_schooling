@@ -1,6 +1,6 @@
 ---
 title: "Exploring Jupiter: The King of the Gas Giants"
-author: kwanza
+author: Chad G. Pete
 date: 2024-01-01
 tags:
 - planets

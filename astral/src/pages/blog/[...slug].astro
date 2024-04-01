@@ -21,7 +21,7 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<SiteLayout cssPath="/css/pages/blog/entry.css">
+<SiteLayout stylesheets={["/css/pages/blog/entry.css"]}>
     <article>
         <header>
             <h2>{ entry.data.title }</h2>

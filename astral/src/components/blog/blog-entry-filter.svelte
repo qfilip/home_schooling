@@ -18,8 +18,9 @@
 
     $: tags = getTags(entriesData);
     $: filteredEntries = entriesData.filter(x =>
-        x.title.toLowerCase().includes(searchQuery) &&
-        (selectedTag !== '' ? x.tags.includes(selectedTag) : true));
+            x.title.toLowerCase().includes(searchQuery.toLowerCase()) &&
+            (selectedTag !== '' ? x.tags.includes(selectedTag) : true));
+            
 </script>
 
 <section>

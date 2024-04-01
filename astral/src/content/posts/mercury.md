@@ -1,6 +1,6 @@
 ---
 title: "Exploring the Planet Mercury: The Closest Planet to the Sun"
-author: kwanza
+author: Chad G. Pete
 date: 2024-01-01
 tags:
 - planets

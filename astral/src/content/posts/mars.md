@@ -1,6 +1,6 @@
 ---
 title: "Exploring Mars: The Red Planet"
-author: kwanza
+author: Chad G. Pete
 date: 2024-01-01
 tags:
 - planets

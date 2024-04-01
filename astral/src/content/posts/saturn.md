@@ -1,6 +1,6 @@
 ---
 title: "Exploring Saturn: The Majestic Ringed Giant"
-author: nia
+author: Chad G. Pete
 date: 2024-01-02
 tags:
 - planets

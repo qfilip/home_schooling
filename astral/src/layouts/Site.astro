@@ -1,5 +1,11 @@
 ---
-const { title, cssPath } = Astro.props;
+type Props = {
+    title?: string;
+    stylesheets?: string[];
+    scripts?: [];
+}
+
+const { title = 'Astral', stylesheets = [], scripts = [] } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -11,10 +17,17 @@ const { title, cssPath } = Astro.props;
     <link rel="stylesheet" href="/css/major_tags.css" media="screen" />
     <link rel="stylesheet" href="/css/buttons.css" media="screen" />
     <link rel="stylesheet" href="/css/layout/site.css" media="screen" />
-    <link rel="stylesheet" href={cssPath} media="screen" />
+    {stylesheets.map(x => <link rel="stylesheet" href={x} media="screen" />)}
     <title>{ title }</title>
 </head>
 <body>
+    {
+        () => {
+            if(scripts.length > 0) {
+                <noscript>This page requires JavaSrcipt in order to function properly</noscript>
+            }
+        }
+    }
     <header id="site-header">
         <a class="headhome" href="/#">
             <h1>Astral</h1>
@@ -42,5 +55,7 @@ const { title, cssPath } = Astro.props;
         <!-- Written by { author } on <time datetime={ date }>{ date }</time> -->
         Astral is a community driven bla bla
     </footer>
+    
+    {scripts.map(x => <script src={x}></script>)}
 </body>
 </html>

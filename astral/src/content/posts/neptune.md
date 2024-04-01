@@ -1,6 +1,6 @@
 ---
 title: "Exploring Neptune: The Mysterious Ice Giant"
-author: nia
+author: Chad G. Pete
 date: 2024-01-02
 tags:
 - planets

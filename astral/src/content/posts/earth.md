@@ -1,6 +1,6 @@
 ---
 title: "Exploring Earth: The Blue Marble"
-author: kwanza
+author: Chad G. Pete
 date: 2024-01-01
 tags:
 - planets

@@ -16,6 +16,7 @@ const { title = 'Astral', stylesheets = [], scripts = [] } = Astro.props;
     <link rel="stylesheet" href="/css/variables.css" media="screen" />
     <link rel="stylesheet" href="/css/major_tags.css" media="screen" />
     <link rel="stylesheet" href="/css/buttons.css" media="screen" />
+    <link rel="stylesheet" href="/css/scrollbar.css" media="screen" />
     <link rel="stylesheet" href="/css/layout/site.css" media="screen" />
     {stylesheets.map(x => <link rel="stylesheet" href={x} media="screen" />)}
     <title>{ title }</title>
@@ -47,16 +48,13 @@ const { title = 'Astral', stylesheets = [], scripts = [] } = Astro.props;
         </nav>
     </header>
 
-    <div id="scroll-surface">
-        <main>
-            <slot/>
-        </main>
-    
-        <footer id="site-footer">
-            <!-- Written by { author } on <time datetime={ date }>{ date }</time> -->
-            Astral is a community driven bla bla
-        </footer>
-    </div>
+    <main>
+        <slot/>
+    </main>
+
+    <footer id="site-footer">
+        Astral is a community driven bla bla
+    </footer>
     
     {scripts.map(x => <script src={x} lang="ts" type="module"></script>)}
 </body>

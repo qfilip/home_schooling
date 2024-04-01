@@ -14,7 +14,7 @@
     
     opacity: .93;
 
-    box-shadow: 2px 2px 2px var(--c-black);
+    box-shadow: 2px 2px 4px var(--c-black);
 
     .headhome {
         text-decoration: none;
@@ -27,7 +27,7 @@
 
     h1:hover {
         cursor: pointer;
-        text-shadow: 2px 2px 3px var(--c-red);
+        text-shadow: 2px 2px 3px var(--c-green);
     }
 
     nav {
@@ -54,18 +54,9 @@
     }
 }
 
-#scroll-surface {
-    position: fixed;
-    top: var(--header-height);
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow-y: auto;
-    background: linear-gradient(to bottom, var(--c-white-d1), var(--c-white-d3));
-}
-
 main {
-    min-height: calc(100% - var(--header-height) - var(--footer-height));
+    min-height: 90%;
+    background: linear-gradient(to bottom, var(--c-white-d2), var(--c-white-d3));
 }
 
 #site-footer {

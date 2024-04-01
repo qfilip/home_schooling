@@ -14,6 +14,7 @@
     --c-green-l1:hsl(122, 39%, 59%);
     --c-green:hsl(122, 39%, 49%);
     --c-green-d1:hsl(122, 39%, 39%);
+    --c-green-d2:hsl(122, 39%, 29%);
     
     --c-orange:hsl(39, 100%, 50%);
     --c-orange-d1:hsl(39, 100%, 40%);
@@ -23,7 +24,4 @@
 
     /* layout */
     --pad-sm: .6rem;
-
-    --header-height: 8vh;
-    --footer-height: 2.5vh;
 }

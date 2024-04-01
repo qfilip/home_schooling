@@ -10,8 +10,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    overflow-y: hidden;
-    background-color: var(--c-white-d1);
+    height: 100%;
+    background-color: var(--c-black);
 }
 
 section {
@@ -28,5 +28,5 @@ p {
 }
 
 a {
-    color: var(--c-green-d1);
+    color: var(--c-green-d2);
 }

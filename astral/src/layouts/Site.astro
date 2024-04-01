@@ -2,7 +2,7 @@
 type Props = {
     title?: string;
     stylesheets?: string[];
-    scripts?: [];
+    scripts?: string[];
 }
 
 const { title = 'Astral', stylesheets = [], scripts = [] } = Astro.props;
@@ -56,6 +56,6 @@ const { title = 'Astral', stylesheets = [], scripts = [] } = Astro.props;
         Astral is a community driven bla bla
     </footer>
     
-    {scripts.map(x => <script src={x}></script>)}
+    {scripts.map(x => <script src={x} lang="ts" type="module"></script>)}
 </body>
 </html>

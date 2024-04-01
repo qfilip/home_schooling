@@ -2,10 +2,22 @@
 import SiteLayout from '../layouts/Site.astro';
 ---
 
-<SiteLayout>
-    <section>
-        <p>
-            Subscription bullshit here
-        </p>
-    </section>
+<SiteLayout stylesheets={["/css/pages/index.css"]} scripts={["/js/pages/subscribe.js"]}>
+	<section>
+        <fieldset>
+            <legend>Query</legend>
+            <div>
+                <label>
+                    Name: <input id="sq" type="text" value="" />
+                </label>
+            </div>
+        </fieldset>
+        <h3>Subscribed</h3>
+        <ul id="item-list">
+            <li data-id="1">Joe</li>
+            <li data-id="2">Jonas</li>
+            <li data-id="4">Jarvis</li>
+            <li data-id="3">Johnatan</li>
+        </ul>
+	</section>
 </SiteLayout>

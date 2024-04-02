@@ -15,6 +15,6 @@ const data = posts.map(x => {
     return d;
 });
 ---
-<SiteLayout stylesheets={["/css/pages/index.css"]}>
+<SiteLayout>
     <BlogEntriesFilter entriesData={data} client:visible />
 </SiteLayout>
